@@ -1,12 +1,12 @@
-function exercicio7(n: number, newN: number, sum: number)
+function exercicio7(n: number, index: number, sum: number)
 {
-    if(newN == 1)
+    if(index == 0)
     {
         console.log(sum);
         return;
     }
 
-    exercicio7(n, newN - 1, newN * sum);
+    exercicio7(n, index - 1, sum *= n);
 }
 
-exercicio7(7, 7, 1);
+exercicio7(9, 4, 1);
