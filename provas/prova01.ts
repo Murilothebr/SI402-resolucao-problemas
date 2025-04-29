@@ -1,11 +1,7 @@
-// Murilo e Igor
-
-class PrimosMenores {
+class Primos {
     private n: number = 0;
 
     constructor(n: number) {
-        console.log("Teste para n = ", n)
-        
         this.n = n;
         this.primosMenores();
     }
@@ -31,12 +27,6 @@ class PrimosMenores {
             }
         }
 
-        var lastIndex = arr.length - 1;
-        console.log("ultimo primo: " + arr[lastIndex])
-        console.log("")
-        console.log("----------------------------------------------")
-        console.log("")
-
         return arr;
     }
 
@@ -61,12 +51,4 @@ class PrimosMenores {
     }       
 }
 
-var cem = new Primos(100);
-var mil = new Primos(1_000);
-var dezMil = new Primos(10_000);
-var cemMil = new Primos(100_000);
-var milhao = new Primos(1_000_000);
-var dezMilhao = new Primos(10_000_000);
-
-
-
+var primos = new Primos(25);
