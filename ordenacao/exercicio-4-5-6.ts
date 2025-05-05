@@ -71,8 +71,28 @@ export default class Crescente {
     console.log(arr);
   }
 
-  public selectionSort() {
-    var arr = this.arr1;
+  public binarySearch(target: number) {
+    var arr = [...this.arr1];
+    this.insertionSort();
+
+    var left = 0;
+    var right = arr.length - 1;
+
+    while (right >= left) {
+      var half = Math.floor((right + left) / 2);
+
+      if (arr[half] == target) {
+        return half;
+      }
+
+      if (arr[half] < target) {
+        left = half - 1;
+      } else {
+        right = half + 1;
+      }
+    }
+
+    return -1;
   }
 }
 
