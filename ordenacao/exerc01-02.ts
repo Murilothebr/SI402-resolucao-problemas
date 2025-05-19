@@ -11,7 +11,6 @@ export default class Exercicios2 {
 
   public ordenar() {
     var arr = [this.a, this.b, this.c];
-
     var aux = 0;
 
     if (arr[0] > arr[1]) {

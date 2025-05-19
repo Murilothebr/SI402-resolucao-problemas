@@ -1,4 +1,4 @@
-{
+cd {
   "compilerOptions": {
     "target": "ES2017",
     /* Visit https://aka.ms/tsconfig to read more about this file */
