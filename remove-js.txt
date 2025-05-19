@@ -1,0 +1,2 @@
+Get-ChildItem -Recurse -Filter "*.js" | Remove-Item -Force
+Get-ChildItem -Recurse -Directory -Filter "dist" | Remove-Item -Recurse -Force
